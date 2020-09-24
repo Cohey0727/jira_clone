@@ -15,9 +15,11 @@ import {
   BeforeInsert,
 } from 'typeorm';
 
-import is from 'utils/validation';
-import { IssueType, IssueStatus, IssuePriority } from 'constants/issues';
-import { Comment, Project, User } from '.';
+import is from '../utils/validation';
+import { IssueType, IssueStatus, IssuePriority } from '../constants/issues';
+import Comment from './Comment';
+import User from './User';
+import Project from './Project';
 
 @Entity()
 class Issue extends BaseEntity {

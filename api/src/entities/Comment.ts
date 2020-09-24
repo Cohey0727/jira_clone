@@ -8,8 +8,9 @@ import {
   ManyToOne,
 } from 'typeorm';
 
-import is from 'utils/validation';
-import { Issue, User } from '.';
+import is from '../utils/validation';
+import User from './User';
+import Issue from './Issue';
 
 @Entity()
 class Comment extends BaseEntity {

@@ -8,9 +8,10 @@ import {
   OneToMany,
 } from 'typeorm';
 
-import is from 'utils/validation';
-import { ProjectCategory } from 'constants/projects';
-import { Issue, User } from '.';
+import is from '../utils/validation';
+import { ProjectCategory } from '../constants/projects';
+import User from './User';
+import Issue from './Issue';
 
 @Entity()
 class Project extends BaseEntity {

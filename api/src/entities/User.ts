@@ -11,8 +11,10 @@ import {
   RelationId,
 } from 'typeorm';
 
-import is from 'utils/validation';
-import { Comment, Issue, Project } from '.';
+import is from '../utils/validation';
+import Issue from './Issue';
+import Comment from './Comment';
+import Project from './Project';
 
 @Entity()
 class User extends BaseEntity {
