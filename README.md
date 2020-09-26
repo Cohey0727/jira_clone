@@ -17,6 +17,8 @@ docker run -d \
   -e POSTGRES_PASSWORD=password \
   -p 6543:5432 \
   postgres
+
+# Connect Database and create database jira_development
 ```
 
 
