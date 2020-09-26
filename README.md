@@ -8,12 +8,23 @@
 npm run install-dependencies
 ```
 
+- database container start
+
+```shell
+docker pull postgres:latest
+docker run -d \
+  --name jira_postgres \
+  -e POSTGRES_PASSWORD=password \
+  -p 6543:5432 \
+  postgres
+```
+
+
 - migration database
 
 ```shell
 cd api/
-npx typeorm migration:run
-
+ts-node ./node_modules/typeorm/cli.js migration:run
 ```
 
 - start api
